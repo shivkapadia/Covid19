@@ -17,6 +17,6 @@ if image_file is not None:
             "image": BytesIO(image)
         }
     )
-
-    label = json.loads(response._content)
-    st.write(f"Patient is {label['class']}")
+    st.write(f"response {response._content}")
+    # label = json.loads(response._content)
+    # st.write(f"Patient is {label['class']}")
