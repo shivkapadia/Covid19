@@ -8,7 +8,7 @@ from model import build_model
 app = FastAPI()
 
 # Load model
-image_shape = (256, 256, 1)
+image_shape = (256, 256, 2)
 num_classes = 3
 model = build_model(image_shape, num_classes)
 model.load_weights('./model_with_weights.h5')
